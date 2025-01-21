@@ -1,0 +1,17 @@
+<!-- expense.component.html -->
+<div class="container">
+  <h2>Expense Details</h2>
+  <form (submit)="submitExpenses()">
+    <div *ngFor="let category of expenseCategories" class="form-group">
+      <label [for]="category">{{ category }}</label>
+      <select [(ngModel)]="expenses[category]" [name]="category" id="{{ category }}" required>
+        <option value="0">Not Applicable</option>
+        <option value="1000">1000-2000</option>
+        <option value="2000">2000-4000</option>
+        <option value="4000">4000-6000</option>
+        <option value="10000">10000-15000</option>
+      </select>
+    </div>
+    <button type="submit" class="btn">Submit</button>
+  </form>
+</div>

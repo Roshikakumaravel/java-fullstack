@@ -1,0 +1,33 @@
+<div class="home-container">
+  <header class="header">
+    <nav class="navbar">
+      <div class="brand-logo">Smartpay</div>
+      <ul class="nav-links">
+        <li><a href="about" routerLink="/about">About</a></li>
+        
+        <li><a href="contact" routerLink="/contact us">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-text">
+      <h1>Money Smart, Future Secured, Stress-Free Living.</h1>
+      <p>
+        Personal finance management made simple. Create a plan for income, 
+        expenses, and investments to achieve your financial goals.
+      </p>
+      <div class="cta-buttons">
+        <button class="btn btn-primary" (click)="onPrimaryClick()">
+          Get Started
+        </button>
+        <button class="btn btn-secondary" (click)="onSecondaryClick()">
+          Read More
+        </button>
+      </div>
+    </div>
+    <div class="hero-image">
+      <img src="assets/images/fpm.jpg" alt="Finance Image">
+    </div>
+  </section>
+</div>

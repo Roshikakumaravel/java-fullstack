@@ -1,0 +1,28 @@
+<div class="job-details-container">
+  <h2>Job Details</h2>
+  <form (submit)="submitJobDetails()" class="job-form">
+    <div class="form-group">
+      <label for="job">Job</label>
+      <input 
+        type="text" 
+        id="job" 
+        [(ngModel)]="job" 
+        name="job" 
+        placeholder="Enter the job title"
+        required 
+      />
+    </div>
+    <div class="form-group">
+      <label for="salary">Salary</label>
+      <input 
+        type="number" 
+        id="salary" 
+        [(ngModel)]="salary" 
+        name="salary" 
+        placeholder="Enter the salary amount"
+        required 
+      />
+    </div>
+    <button type="submit" class="btn-submit">Submit</button>
+  </form>
+</div>
